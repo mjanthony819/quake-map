@@ -14,7 +14,7 @@ Live earthquakes from the USGS, plotted on a world map — circle size is magnit
 
 ## stack
 
-Single `index.html` — vanilla JS + [Leaflet](https://leafletjs.com/) with CARTO basemaps (both free, no API keys). Hosted on GitHub Pages.
+Single `index.html` — vanilla JS + [Leaflet](https://leafletjs.com/) with OpenStreetMap + Esri basemaps (both free, no API keys). Hosted on GitHub Pages.
 
 ## run locally
 
