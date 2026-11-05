@@ -7,18 +7,18 @@
 <meta name="description" content="Live earthquakes from the USGS feed on a world map, circles scaled by magnitude.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
   :root{
-    --bg:#fafafa; --surface:#ffffff; --ink:#171717; --ink-2:#5c5c5c; --ink-3:#8a8a8a;
-    --line:#e4e4e0; --accent:#1d4ed8;
+    --bg:#F4EDE0; --surface:#FFFDF6; --ink:#14213D; --ink-2:#4E5875; --ink-3:#7A8097;
+    --line:#E2D7C3; --accent:#E8503C;
     --shadow:0 1px 2px rgba(0,0,0,.05);
   }
   html[data-theme="dark"]{
-    --bg:#101012; --surface:#17171a; --ink:#ededea; --ink-2:#a3a3a0; --ink-3:#6f6f6c;
-    --line:#26262b; --accent:#6d9bff;
+    --bg:#14213D; --surface:#1B2A4A; --ink:#F4EDE0; --ink-2:#C9BFA9; --ink-3:#97A0B6;
+    --line:#2E4066; --accent:#FF6B5B;
     --shadow:0 1px 2px rgba(0,0,0,.4);
   }
   *{box-sizing:border-box; margin:0; padding:0}
@@ -31,7 +31,7 @@
     display:flex; align-items:baseline; justify-content:space-between; gap:16px;
     padding:22px 28px 0; max-width:1180px; width:100%; margin:0 auto;
   }
-  .brand h1{font-size:20px; font-weight:700; letter-spacing:-.02em}
+  .brand h1{font-family:'Instrument Serif',Georgia,serif; font-style:italic; font-weight:400; font-size:29px; letter-spacing:-.01em}
   .brand h1 .mono{font-family:'IBM Plex Mono',monospace; font-weight:500; color:var(--ink-3); font-size:13px; margin-left:8px}
   .brand p{font-size:13px; color:var(--ink-2); margin-top:3px}
   .theme-btn{
@@ -52,7 +52,7 @@
     font:500 12.5px 'Inter',sans-serif; cursor:pointer; border-right:1px solid var(--line);
   }
   .seg button:last-child{border-right:none}
-  .seg button.on{background:var(--accent); color:#fff}
+  .seg button.on{background:var(--accent); color:#14213D; font-weight:600}
   .slider-wrap{display:flex; align-items:center; gap:8px; padding:0 6px}
   .slider-wrap label{font:500 11px 'IBM Plex Mono',monospace; color:var(--ink-3); text-transform:uppercase; letter-spacing:.06em}
   .slider-wrap output{font:600 12px 'IBM Plex Mono',monospace; color:var(--ink-2); min-width:36px}
