@@ -12,13 +12,13 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
   :root{
-    --bg:#F4EDE0; --surface:#FFFDF6; --ink:#14213D; --ink-2:#4E5875; --ink-3:#7A8097;
-    --line:#E2D7C3; --accent:#E8503C;
+    --bg:#FCFFFF; --surface:#FFFFFF; --ink:#14213D; --ink-2:#4E5875; --ink-3:#66708A;
+    --line:#AECFDF; --accent:#0693C6; --pop:#D83995;
     --shadow:0 1px 2px rgba(0,0,0,.05);
   }
   html[data-theme="dark"]{
-    --bg:#14213D; --surface:#1B2A4A; --ink:#F4EDE0; --ink-2:#C9BFA9; --ink-3:#97A0B6;
-    --line:#2E4066; --accent:#FF6B5B;
+    --bg:#02070A; --surface:#071A24; --ink:#FCFFFF; --ink-2:#A8C4D4; --ink-3:#6E93A6;
+    --line:#1A4557; --accent:#0297DE; --pop:#FC734D;
     --shadow:0 1px 2px rgba(0,0,0,.4);
   }
   *{box-sizing:border-box; margin:0; padding:0}
@@ -32,7 +32,7 @@
     padding:22px 28px 0; max-width:1180px; width:100%; margin:0 auto;
   }
   .brand h1{font-family:'Instrument Serif',Georgia,serif; font-style:italic; font-weight:400; font-size:29px; letter-spacing:-.01em}
-  .brand h1 .mono{font-family:'IBM Plex Mono',monospace; font-weight:500; color:var(--ink-3); font-size:13px; margin-left:8px}
+  .brand h1 .mono{font-family:'IBM Plex Mono',monospace; font-weight:500; color:var(--pop); font-size:13px; margin-left:8px}
   .brand p{font-size:13px; color:var(--ink-2); margin-top:3px}
   .theme-btn{
     border:1px solid var(--line); background:var(--surface); color:var(--ink-2);
